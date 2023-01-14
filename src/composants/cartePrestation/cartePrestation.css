@@ -3,19 +3,20 @@
 
 .cartePrestation {
   height: 330px;
-  width: 300px;
+  width: 294px;
   border-radius: 10px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  background-color: rgba(241, 238, 238, 0.45);
 
   transition: transform 100ms ease-in;
 }
 
 .cartePrestation img {
   object-fit: cover;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
+  height: 190px;
 }
 
 .corpsDeCarte {
@@ -23,14 +24,22 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: rgba(241, 238, 238, 0.45);
 
   padding: 0 1.5em 1.5em 1.5em;
   border-radius: 0 0 10px 10px;
 }
 
+.corpsDeCarte a,
 .corpsDeCarte h2 {
-  font-family: "Righteous", sans-serif;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.16em;
+  line-height: 110%;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.corpsDeCarte h2 {
+  text-transform: uppercase;
 }
 .corpsDeCarte h2 a {
   text-decoration: none;
@@ -49,6 +58,7 @@
   font-family: "Lato", sans-serif;
 }
 .cartePrestation:hover {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
   transform: scale(1.05);
   cursor: pointer;
 }
