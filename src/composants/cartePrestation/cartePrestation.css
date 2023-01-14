@@ -1,0 +1,22 @@
+.cartePrestation {
+  height: 500px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.cartePrestation img {
+  object-fit: cover;
+  width: 100%;
+  height: 12rem;
+}
+
+.corpsDeCarte {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
