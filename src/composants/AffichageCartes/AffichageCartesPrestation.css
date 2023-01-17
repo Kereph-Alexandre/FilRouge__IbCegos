@@ -1,0 +1,8 @@
+.affichagePrestations {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 2em;
+
+  margin: 4.16vw;
+}

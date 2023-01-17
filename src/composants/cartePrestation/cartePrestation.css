@@ -15,6 +15,10 @@
   /* Aspect de la carte */
   background-color: rgba(241, 238, 238, 0.45);
   transition: transform 100ms ease-in;
+
+  /* empêche les cartes de modifier leur largeur lorsque flexbox est utilisé*/
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 
 .cartePrestation img {
