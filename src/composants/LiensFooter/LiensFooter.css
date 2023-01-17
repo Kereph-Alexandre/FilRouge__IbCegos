@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.liensFooter {
+    color: white;
+    font-family: 'Righteous', sans-serif;
+    text-decoration: none;
+    font-size: 7px;
+    margin-bottom: 0.8vh;
+}
