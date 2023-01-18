@@ -1,6 +1,6 @@
-import { Bouton } from "../bouton/bouton";
-import { LienHeader } from "../lien_header/lienHeader";
-import { Logo } from "../logo/logo";
+import { Bouton } from "../../composants/Bouton/Bouton";
+import { LienHeader } from "../../composants/lien_header/lienHeader";
+import { Logo } from "../../composants/logo/logo";
 
 import "./header.css";
 
@@ -16,7 +16,7 @@ export const Header = () => {
           <LienHeader texte="Mes Prestation" href="" />
           <LienHeader texte="Ajouter une Prestation" href="" />
         </div>
-        <Bouton texte="Rejoindre" Click="" />
+        <Bouton className="boutonAction" text="Rejoindre" Click="" />
       </div>
     </header>
   );
