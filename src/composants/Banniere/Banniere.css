@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+.conteneurBanniere {
+  display: flex;
+  grid-template-columns: 1.7fr 1fr;
+  background-color: rgba(214, 214, 214, 0.962);
+}
+
+.imageBanniere {
+  width: 500px;
+  object-fit: cover;
+}
+
+.descriptionBanniere {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  line-height: 110%;
+  font-size: 16px;
+  letter-spacing: 0.16em;
+  text-align: left;
+  margin: 40px;
+}
