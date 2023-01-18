@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+.cartePrestation {
+  /* Dimemsions de la carte */
+  height: 330px;
+  width: 294px;
+  border-radius: 10px;
+
+  /* Disposition de l'image et de la du corpsDeCarte */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  /* Aspect de la carte */
+  background-color: rgba(241, 238, 238, 0.45);
+  transition: transform 100ms ease-in;
+
+  /* empêche les cartes de modifier leur largeur lorsque flexbox est utilisé*/
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.cartePrestation img {
+  object-fit: cover; /* Assurre que l'image garde son ratio d'origine*/
+  border-radius: 10px;
+  height: 190px;
+}
+
+.corpsDeCarte {
+  /* Disposition des éléments texte au sein de la division */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 auto;
+
+  /* Aspect général du corps de carte */
+  padding: 0 1.5em 1.5em 1.5em;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Mise en forme du titre et du lien */
+.corpsDeCarte a,
+.corpsDeCarte h2 {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.16em;
+  line-height: 110%;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.corpsDeCarte h2 {
+  text-transform: uppercase;
+}
+.corpsDeCarte h2 a {
+  text-decoration: none;
+  color: #1237a1;
+}
+
+.corpsDeCarte > a {
+  text-decoration: underline;
+  color: #1237a1;
+}
+.cartePrestation:hover a {
+  color: #1873d3;
+}
+
+.corpsDeCarte p {
+  font-family: "Lato", sans-serif;
+}
+.cartePrestation:hover {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}
