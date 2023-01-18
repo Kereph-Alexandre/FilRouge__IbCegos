@@ -4,7 +4,7 @@ import './Searchbar.css'
 
 export const Searchbar = () => {
     return (
-        <container className="container">
+        <container className="containerSearchbar">
             <div className="bouton">
                 <Bouton text="Trouver une entreprise"/>
             </div>
