@@ -16,7 +16,7 @@ export const Header = () => {
           <LienHeader texte="Mes Prestation" href="" />
           <LienHeader texte="Ajouter une Prestation" href="" />
         </div>
-        <Bouton texte="Rejoindre" Click="" />
+        <Bouton className="boutonAction" text="Rejoindre" Click="" />
       </div>
     </header>
   );

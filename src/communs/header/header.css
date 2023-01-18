@@ -35,3 +35,25 @@
   display: flex;
   align-items: center;
 }
+
+/* .boutonAction {
+  box-sizing: border-box;
+  height: 50px;
+  width: 230px !important;
+
+  border-radius: 10px;
+  border: none;
+
+  background-color: #f5cb02;
+  box-shadow: none;
+
+  margin: 2vh;
+
+  font-family: "Righteous", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.boutonAction:hover {
+  box-shadow: 0 4px 4px;
+} */
