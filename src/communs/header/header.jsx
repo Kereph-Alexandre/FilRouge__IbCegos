@@ -12,7 +12,7 @@ export const Header = () => {
       </div>
       <div className="lienEtBouton">
         <nav className="barreDeNavigation">
-          <Link className="lienHeader" to="/">
+          <Link className="lienHeader" to="/EspaceEntreprise">
             <li>Mon entreprise</li>
           </Link>
           <Link className="lienHeader" to="/">

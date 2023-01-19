@@ -1,0 +1,36 @@
+:root {
+  /* Fond de couleur grise */
+  --background-grey: rgba(206, 206, 206, 0.25);
+
+  /* Titre  */
+}
+.espaceEntreprise {
+  display: flex;
+  justify-content: center;
+}
+
+.espaceEntreprise label {
+}
+
+.espaceEntreprise input[type]:not([type="submit"]) {
+}
+
+.formulaireEntreprise {
+  width: 100%;
+  display: flex;
+}
+
+.imageEntreprise {
+  display: flex;
+  background-color: var(--background-grey);
+}
+
+.encartDescriptionEntreprise {
+  background-color: var(--background-grey);
+}
+
+.informationsEntreprise {
+  background-color: var(--background-grey);
+  display: flex;
+  flex-direction: column;
+}
