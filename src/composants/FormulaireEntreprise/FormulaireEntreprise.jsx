@@ -22,10 +22,11 @@ export const FormulaireEntreprise = () => {
           <label htmlFor="descriptionEntreprise">
             Dévrivez votre entreprise
           </label>
-          <input
-            type="text"
-            placeholder="description..."
+          <textarea
+            cols={30}
+            rows={10}
             name="descriptionEntreprise"
+            id="descriptionEntreprise"
           />
         </div>
         <div className="informationsEntreprise">
