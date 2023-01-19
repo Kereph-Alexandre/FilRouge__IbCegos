@@ -1,4 +1,4 @@
-import { Bouton } from "../../composants/Bouton/Bouton"
+import { Bouton } from "../../composants/Bouton/bouton"
 import { SearchbarItem } from "../../composants/SearchbarItem/SearchbarItem"
 import './Searchbar.css'
 

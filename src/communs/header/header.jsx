@@ -1,4 +1,4 @@
-import { Bouton } from "../../composants/Bouton/Bouton";
+import { Bouton } from "../../composants/Bouton/bouton";
 import { LienHeader } from "../../composants/lien_header/lienHeader";
 import { Logo } from "../../composants/logo/logo";
 
@@ -14,7 +14,7 @@ export const Header = () => {
         <div className="barreDeNavigation">
           <LienHeader texte="Mon Entreprise" href="" />
           <LienHeader texte="Mes Prestation" href="" />
-          <LienHeader texte="Ajouter une Prestation" href="" />
+          <LienHeader texte="Ajouter une Prestation" href="/AjoutPrestation" />
         </div>
         <Bouton className="boutonAction" text="Rejoindre" Click="" />
       </div>
