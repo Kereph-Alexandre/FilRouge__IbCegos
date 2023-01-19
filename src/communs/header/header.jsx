@@ -1,5 +1,5 @@
+import { Link } from "react-router-dom";
 import { Bouton } from "../../composants/Bouton/Bouton";
-import { LienHeader } from "../../composants/lien_header/lienHeader";
 import { Logo } from "../../composants/logo/logo";
 
 import "./header.css";
@@ -11,12 +11,18 @@ export const Header = () => {
         <Logo />
       </div>
       <div className="lienEtBouton">
-        <div className="barreDeNavigation">
-          <LienHeader texte="Mon Entreprise" href="" />
-          <LienHeader texte="Mes Prestation" href="" />
-          <LienHeader texte="Ajouter une Prestation" href="" />
-        </div>
-        <Bouton className="boutonAction" text="Rejoindre" Click="" />
+        <nav className="barreDeNavigation">
+          <Link className="lienHeader" to="/">
+            <li>Mon entreprise</li>
+          </Link>
+          <Link className="lienHeader" to="/">
+            <li>Mes Prestations</li>
+          </Link>
+          <Link className="lienHeader" to="/">
+            <li>Ajouter une prestation</li>
+          </Link>
+        </nav>
+        <Bouton id="boutonCTAHeader" text="Rejoindre" Click="" />
       </div>
     </header>
   );
