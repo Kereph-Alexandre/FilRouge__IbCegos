@@ -6,6 +6,14 @@
   --background-grey: rgba(206, 206, 206, 0.25);
 
   /* Titre  */
+  --titlefont-family: "Righteous", sans-serif;
+  --titlefont-size: 20px;
+  --titlefont-weight: 400;
+  --titlefont-lineheight: 24px;
+  --titlefont-letterspacing: 0.16em;
+  --titlefont-transform: uppercase;
+  --titlefont-color: #1237a1;
+  --titlefont-lineheight: 30px;
 
   /* Texte */
   --textfont-family: "Lato", sans-serif;
@@ -20,10 +28,24 @@
   justify-content: center;
 }
 
-.espaceEntreprise label {
+.espaceEntreprise h2 {
+  font-size: var(--titlefont-size);
+  font-family: var(--titlefont-family);
+  font-weight: var(--titlefont-weight);
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: var(--titlefont-lineheight);
+  color: var(--titlefont-color);
 }
 
-.espaceEntreprise input[type]:not([type="submit"]) {
+.espaceEntreprise label {
+  font-size: var(--titlefont-size);
+  font-family: var(--textfont-family);
+  font-weight: var(--titlefont-weight);
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: 19px;
+  color: var(--titlefont-color);
 }
 
 .formulaireEntreprise {
@@ -37,14 +59,43 @@
 .imageEntreprise {
   display: flex;
   background-color: var(--background-grey);
+  border-radius: 10px;
+  flex-direction: row;
+}
+
+.choixImage {
+  padding-left: 2em;
+}
+
+.imageEntreprise img {
+  border-radius: 10px;
+  width: 190px;
 }
 
 .encartDescriptionEntreprise {
   background-color: var(--background-grey);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.encartDescriptionEntreprise h2 {
+  padding-left: 2em;
+}
+
+.encartDescriptionEntreprise textarea {
+  width: 98%;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+  margin: 10px;
 }
 
 .informationsEntreprise {
   background-color: var(--background-grey);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
 
@@ -73,4 +124,28 @@
   line-height: var(--textfont-lineheight);
   letter-spacing: var(--textfont-letterspacing);
   padding-left: 7px;
+}
+
+.espaceEntreprise button {
+  box-sizing: border-box;
+  height: 50px;
+  width: 230px !important;
+
+  border-radius: 10px;
+  border: none;
+
+  background-color: #f5cb02 !important;
+  box-shadow: none;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: "Righteous", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase !important;
+}
+
+.alacon {
+  display: flex;
+  justify-content: end;
 }

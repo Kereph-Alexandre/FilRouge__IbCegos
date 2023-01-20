@@ -10,7 +10,7 @@ export const FichePrestation = () => {
   presta = prestations.find((presta) => presta.id === +id);
 
   return (
-    <main>
+    <main className="fichePrestation">
       <article className="presentationPrestation">
         <section className="imagePrestation">
           <h2>{presta.titre}</h2>
