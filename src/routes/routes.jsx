@@ -18,13 +18,14 @@ export const Router = () => {
       path: "/EspaceEntreprise/",
       element: <FormulaireEntreprise />,
     },
+    {
       path: "Inscription",
       element: <Inscription />,
     },
     {
       path: "/Connexion",
       element: <Connexion />,
-    }
+    },
   ];
 
   return <>{useRoutes(routes)}</>;
