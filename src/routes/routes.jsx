@@ -17,9 +17,10 @@ export const Router = () => {
       path: "Inscription",
       element: <Inscription />,
     },
+    {
       path: "/Connexion",
       element: <Connexion />,
-    },
+    }
   ];
 
   return <>{useRoutes(routes)}</>;

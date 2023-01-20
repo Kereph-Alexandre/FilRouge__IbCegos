@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
-.containerConnexion {
+.containerInscription {
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -17,7 +17,7 @@
   border-radius: 5px 5px 5px 5px;
 }
 
-.containerConnexion h1 {
+.containerInscription h1 {
   font-family: "Righteous", sans-serif;
   text-transform: uppercase;
   font-size: 32px;
@@ -25,31 +25,36 @@
   margin-bottom: 30px;
 }
 
-.containerConnexion input {
-  width: 70%;
-  height: 5vh;
+.containerInscription input {
   border-radius: 5px 5px 5px 5px;
   margin-bottom: 25px;
   border: none;
   box-shadow: 2px 2px 2px lightgray;
 }
 
+
 input.utilisateur {
   background: url("https://api.iconify.design/ph/user-circle-fill.svg?color=%231237a1")
     no-repeat left center / contain;
   background-color: white;
+  width: 70%;
+  height: 5vh;
 }
 
 input.mail {
   background: url("https://api.iconify.design/ph/envelope-simple.svg?color=%231237a1")
     no-repeat left center / contain;
   background-color: white;
+  width: 70%;
+  height: 5vh;
 }
 
 input.motDePasse {
   background: url("https://api.iconify.design/ph/lock-key-fill.svg?color=%231237a1")
     no-repeat left center / contain;
   background-color: white;
+  width: 70%;
+  height: 5vh;
 }
 
 ::placeholder {
@@ -59,14 +64,14 @@ input.motDePasse {
   color: grey;
 }
 
-.containerConnexion a {
+.containerInscription a {
   text-decoration: none;
   color: #1237a1;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.containerConnexion .bouton {
+.containerInscription .bouton {
   align-self: center;
   color: black;
   background-color: #f5cb02;
@@ -80,8 +85,9 @@ input.motDePasse {
 input.checkbox {
   height: 13px;
   width: 20px;
+  box-shadow: none;
 }
 
 label {
-  font-size: 12px;
+  font-size: 10px;
 }

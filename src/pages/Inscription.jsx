@@ -5,7 +5,7 @@ import "./Inscription.css";
 export const Inscription = () => {
   return (
     <>
-      <container className="containerConnexion">
+      <container className="containerInscription">
         <h1>Inscription</h1>
         <ChampFormulaire
           class="utilisateur"
