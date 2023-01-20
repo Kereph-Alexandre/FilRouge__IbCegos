@@ -2,7 +2,6 @@
 
 .SearchButton{
     background-color: #1237A1;
-    border-radius: 0 5px 5px 0;
     border: none;
     cursor: pointer;
     height: 4vh;
@@ -15,4 +14,11 @@
     font-family: "Righteous", sans-serif;  
     height: 4vh; 
     width: 30vw;
+    border: none;
+}
+
+.Searchbar {
+    border: solid;
+    border-color: #1237A1;
+    border-radius: 5px 5px 5px 5px;
 }
