@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+.header {
+  background-color: #1237a1;
+  padding: 0 100px 0 0px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.header a {
+  font-family: "Righteous", sans-serif;
+  text-transform: uppercase;
+}
+
+.barreDeNavigation {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+
+  margin: 1vw;
+}
+
+.header a,
+.header a img {
+  display: flex;
+  height: 100%;
+}
+
+.header a img {
+  object-fit: contain;
+}
+
+.lienEtBouton {
+  display: flex;
+  align-items: center;
+}
+
+.header button {
+  box-sizing: border-box;
+  height: 50px;
+  width: 230px !important;
+
+  border-radius: 10px;
+  border: none;
+
+  background-color: #f5cb02 !important;
+  box-shadow: none;
+
+  margin: 2vh;
+
+  font-family: "Righteous", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase !important;
+}
+
+.header button:hover {
+  box-shadow: 0 4px 4px rgba(0, 0, 0);
+}
+
+.lienHeader li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.lienHeader {
+  text-decoration: none;
+  color: #ffffff;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.lienHeader:hover {
+  color: #f5cb02;
+}

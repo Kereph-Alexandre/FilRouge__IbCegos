@@ -1,14 +1,14 @@
-import "./bouton.css";
+import './Bouton.css'
 
 /**
- * Composant bouton
- * @param {{text:string}} props
- * @returns un bouton CTA, avec une fonction propre et un texte spécifique
+ * Bouton 
+ * @param {{text:string}} props 
+ * @returns un super bouton
  */
 export const Bouton = (props) => {
-  return (
-    <button className="boutonAction" clic={props.clic}>
-      {props.texte}
-    </button>
-  );
-};
+    return (
+        <button className="bouton" onClick={props.onClick}>
+            {props.text}
+        </button>
+    )
+}
