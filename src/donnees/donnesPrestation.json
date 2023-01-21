@@ -9,7 +9,8 @@
     "tauxHoraire": 47.6,
     "localisation": "Lille",
     "datePublication": "27/01/2019",
-    "nombrePrestations": 9999
+    "nombrePrestations": 9999,
+    "categorie": "bricolage"
   },
   {
     "id": 2,
