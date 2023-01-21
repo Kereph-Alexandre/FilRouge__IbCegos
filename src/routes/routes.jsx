@@ -4,6 +4,7 @@ import { FichePrestation } from "../composants/FichePrestation/FichePrestation";
 import { FormulaireEntreprise } from "../composants/FormulaireEntreprise/FormulaireEntreprise";
 import { Inscription } from "../pages/Inscription";
 import { Connexion } from "../pages/Connexion";
+import { Recherche } from "../pages/Recherche/Recherche";
 export const Router = () => {
   const routes = [
     {
@@ -25,6 +26,10 @@ export const Router = () => {
     {
       path: "/Connexion",
       element: <Connexion />,
+    },
+    {
+      path: "/Recherche",
+      element: <Recherche />,
     },
   ];
 
