@@ -14,29 +14,39 @@ export const AffichageListe = (props) => {
         <span>Trier : </span>
         <span>
           A-Z
-          <Icon
-            icon="material-symbols:arrow-drop-up-rounded"
-            width="50"
-            height="50"
-          />
-          <Icon
-            icon="material-symbols:arrow-drop-down-rounded"
-            width="50"
-            height="50"
-          />
+          <span onClick={props.triTitre}>
+            {props.titreCroissant ? (
+              <Icon
+                icon="material-symbols:arrow-drop-down-rounded"
+                width="50"
+                height="50"
+              />
+            ) : (
+              <Icon
+                icon="material-symbols:arrow-drop-up-rounded"
+                width="50"
+                height="50"
+              />
+            )}
+          </span>
         </span>
         <span>
           Catégorie
-          <Icon
-            icon="material-symbols:arrow-drop-up-rounded"
-            width="50"
-            height="50"
-          />
-          <Icon
-            icon="material-symbols:arrow-drop-down-rounded"
-            width="50"
-            height="50"
-          />
+          <span onClick={props.triCategorie}>
+            {props.categorieCroissante ? (
+              <Icon
+                icon="material-symbols:arrow-drop-down-rounded"
+                width="50"
+                height="50"
+              />
+            ) : (
+              <Icon
+                icon="material-symbols:arrow-drop-up-rounded"
+                width="50"
+                height="50"
+              />
+            )}
+          </span>
         </span>
       </section>
       <main className="affichageListePrestation">
