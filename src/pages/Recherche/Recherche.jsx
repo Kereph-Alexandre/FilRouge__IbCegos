@@ -9,6 +9,10 @@ export const Recherche = () => {
   const [motRecherche, setMotRecherche] = useState("ipsum");
   const [resultatRecherche, setResultatRecherche] = useState(données);
 
+  const changementMotClef = (nouveauMotClef) => {
+    setMotRecherche(nouveauMotClef);
+  };
+
   useEffect(() => {
     const resultat = données.filter(
       (prestation) =>
@@ -25,7 +29,7 @@ export const Recherche = () => {
 
   return (
     <>
-      <Searchbar />
+      <Searchbar changementMotClef={changementMotClef} />
       <AffichageListe motclef={motRecherche} prestations={resultatRecherche} />
     </>
   );
