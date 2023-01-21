@@ -2,17 +2,13 @@ import { Link } from "react-router-dom";
 import "./AffichageListe.css";
 import { Icon } from "@iconify/react";
 
-import { useState } from "react";
-
-import prestations from "../../donnees/donnesPrestation.json";
 import { ItemListePrestation } from "../ItemListePrestation/ItemListePrestation";
 
-export const AffichageListe = () => {
+export const AffichageListe = (props) => {
   return (
     <>
       <section className="rappelRecherche">
-        Résultats pour la recherche : ""
-        {/* {props.motclef} */}
+        Résultats pour la recherche : "{props.motclef}"
       </section>
       <section className="optionTri">
         <span>Trier : </span>
@@ -44,8 +40,8 @@ export const AffichageListe = () => {
         </span>
       </section>
       <main className="affichageListePrestation">
-        {prestations.map((prestation) => (
-          <Link to={`/FichePrestation/${prestation.id}`}>
+        {props.prestations.map((prestation) => (
+          <Link key={prestation.id} to={`/FichePrestation/${prestation.id}`}>
             <ItemListePrestation key={prestation.id} {...prestation} />
           </Link>
         ))}
