@@ -1,19 +1,26 @@
 .itemListePrestation {
-  background: #cecece;
+  background: rgba(241, 238, 238, 0.5);
   display: flex;
   border-radius: 10px;
 
   height: 120px;
   margin: 1em;
+
+  overflow: hidden;
 }
 
 .illustrationListePrestation {
+  /* Force les image a une largueur de 15%, sans l'étirer */
   object-fit: cover;
-  height: 100%;
+  min-width: 15%;
+  width: 15%;
+
   border-radius: 10px;
+  height: auto;
 }
 .informationListePrestation {
   padding: 1em;
+  flex-grow: 1;
 }
 
 .enteteItemListe {

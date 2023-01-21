@@ -14,7 +14,7 @@ export const ItemListePrestation = (props) => {
       <div className="informationListePrestation">
         <div className="enteteItemListe">
           <span className="titreListePrestation">
-            {props.titre} - {props.prestataire} -{props.localisation}
+            {props.titre} - {props.categorie} -{props.localisation}
           </span>
           <span className="noteListePrestation">{props.note}/5</span>
         </div>
