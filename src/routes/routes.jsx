@@ -31,6 +31,10 @@ export const Router = () => {
       path: "/Recherche",
       element: <Recherche />,
     },
+    {
+      path: "/Recherche/:motClef",
+      element: <Recherche />,
+    },
   ];
 
   return <>{useRoutes(routes)}</>;
