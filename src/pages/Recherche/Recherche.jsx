@@ -2,14 +2,13 @@ import { Searchbar } from "../../communs/Searchbar/Searchbar";
 import { AffichageListe } from "../../composants/AffichageListe/AffichageListe";
 
 import { useState } from "react";
-import données from "../../donnees/donnesPrestation.json";
+import données from "../../donnees/donneesPrestation.json";
 import { useEffect } from "react";
 
 import { useParams } from "react-router-dom";
 
 export const Recherche = () => {
-  // TEST SOLUTION CHATGGPT
-  const { motClef } = useParams(); //
+  const { motClef } = useParams();
 
   const [motRecherche, setMotRecherche] = useState("");
   const [titreCroissant, setTitreCroissant] = useState(true);
