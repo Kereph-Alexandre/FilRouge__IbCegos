@@ -5,7 +5,12 @@ import { useState } from "react";
 import données from "../../donnees/donnesPrestation.json";
 import { useEffect } from "react";
 
+import { useParams } from "react-router-dom";
+
 export const Recherche = () => {
+  // TEST SOLUTION CHATGGPT
+  const { motClef } = useParams(); //
+
   const [motRecherche, setMotRecherche] = useState("");
   const [titreCroissant, setTitreCroissant] = useState(true);
   const [categorieCroissante, setCategorieCroissante] = useState(true);
@@ -38,6 +43,11 @@ export const Recherche = () => {
   };
 
   useEffect(() => {
+    setMotRecherche("");
+    if (motClef) setMotRecherche(motClef);
+  }, [motClef]);
+
+  useEffect(() => {
     const resultat = données.filter(
       (prestation) =>
         prestation.titre.toLowerCase().includes(motRecherche.toLowerCase()) ||
@@ -45,11 +55,8 @@ export const Recherche = () => {
           .toLowerCase()
           .includes(motRecherche.toLowerCase())
     );
-    console.log(resultat);
     setResultatRecherche(resultat);
   }, [motRecherche]);
-
-  console.log(resultatRecherche);
 
   return (
     <>
