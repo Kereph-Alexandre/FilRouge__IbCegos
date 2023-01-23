@@ -2,7 +2,7 @@ import { Searchbar } from "../../communs/Searchbar/Searchbar";
 import { AffichageListe } from "../../composants/AffichageListe/AffichageListe";
 
 import { useState } from "react";
-import données from "../../donnees/donneesPrestation.json";
+import donnees from "../../donnees/donneesPrestation.json";
 import { useEffect } from "react";
 
 import { useParams } from "react-router-dom";
@@ -13,7 +13,9 @@ export const Recherche = () => {
   const [motRecherche, setMotRecherche] = useState("");
   const [titreCroissant, setTitreCroissant] = useState(true);
   const [categorieCroissante, setCategorieCroissante] = useState(true);
-  const [resultatRecherche, setResultatRecherche] = useState(données);
+  const [resultatRecherche, setResultatRecherche] = useState(
+    donnees.prestations
+  );
 
   const triTitre = () => {
     setTitreCroissant(!titreCroissant);
@@ -47,7 +49,7 @@ export const Recherche = () => {
   }, [motClef]);
 
   useEffect(() => {
-    const resultat = données.filter(
+    const resultat = donnees.prestations.filter(
       (prestation) =>
         prestation.titre.toLowerCase().includes(motRecherche.toLowerCase()) ||
         prestation.description
