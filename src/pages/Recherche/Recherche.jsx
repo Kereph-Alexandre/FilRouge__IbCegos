@@ -2,10 +2,10 @@ import { Searchbar } from "../../communs/Searchbar/Searchbar";
 import { AffichageListe } from "../../composants/AffichageListe/AffichageListe";
 
 import { useState } from "react";
-import donnees from "../../donnees/donneesPrestation.json";
 import { useEffect } from "react";
 
 import { useParams } from "react-router-dom";
+import PrestationService from "../../services/prestation.services";
 
 export const Recherche = () => {
   const { motClef } = useParams();
@@ -13,9 +13,8 @@ export const Recherche = () => {
   const [motRecherche, setMotRecherche] = useState("");
   const [titreCroissant, setTitreCroissant] = useState(true);
   const [categorieCroissante, setCategorieCroissante] = useState(true);
-  const [resultatRecherche, setResultatRecherche] = useState(
-    donnees.prestations
-  );
+  const [donnees, setDonnees] = useState([]);
+  const [resultatRecherche, setResultatRecherche] = useState([]);
 
   const triTitre = () => {
     setTitreCroissant(!titreCroissant);
@@ -49,15 +48,22 @@ export const Recherche = () => {
   }, [motClef]);
 
   useEffect(() => {
-    const resultat = donnees.prestations.filter(
-      (prestation) =>
-        prestation.titre.toLowerCase().includes(motRecherche.toLowerCase()) ||
-        prestation.description
-          .toLowerCase()
-          .includes(motRecherche.toLowerCase())
-    );
-    setResultatRecherche(resultat);
-  }, [motRecherche]);
+    PrestationService.getPrestations().then((data) => setDonnees(data));
+  }, []);
+
+  useEffect(() => {
+    console.log(donnees);
+    if (donnees.length > 0) {
+      const result = donnees.filter(
+        (prestation) =>
+          prestation.titre.toLowerCase().includes(motRecherche.toLowerCase()) ||
+          prestation.description
+            .toLowerCase()
+            .includes(motRecherche.toLowerCase())
+      );
+      setResultatRecherche(result);
+    }
+  }, [motRecherche, donnees]);
 
   return (
     <>
