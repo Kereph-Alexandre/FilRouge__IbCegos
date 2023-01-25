@@ -1,18 +1,20 @@
 .footer {
-    display: flex;    
-    justify-content: space-evenly;
-    width: 100vw;
-    height: 12vh;
-    background-color: #1237A1;
-
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+  height: 12vh;
+  background-color: #1237a1;
+  position: static;
+  bottom: 0;
+  width: 100%;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    margin-top: 2.5vh;
+.containerFooter {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3vh;
 }
 
-.container a:first-child{
-    color: #F5CB02;
+.containerFooter a:first-child {
+  color: #f5cb02;
 }

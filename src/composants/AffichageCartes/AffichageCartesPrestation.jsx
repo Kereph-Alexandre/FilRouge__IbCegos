@@ -3,13 +3,15 @@ import { Link } from "react-router-dom";
 import { CartePrestation } from "../cartePrestation/cartePrestation";
 import "./AffichageCartesPrestation.css";
 
-import prestations from "../../donnees/donnesPrestation.json";
+import PrestationService from "../../services/prestation.services";
 
 export const AffichageCartePrestation = () => {
   const [listePrestations, setListePrestation] = useState([]);
 
   useEffect(() => {
-    setListePrestation(prestations);
+    PrestationService.getPrestations().then((prestations) =>
+      setListePrestation(prestations)
+    );
   }, []);
 
   return (

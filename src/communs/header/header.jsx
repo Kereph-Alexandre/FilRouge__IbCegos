@@ -1,5 +1,7 @@
-import { Bouton } from "../../composants/Bouton/bouton";
+
 import { LienHeader } from "../../composants/lien_header/lienHeader";
+import { Link } from "react-router-dom";
+import { Bouton } from "../../composants/Bouton/Bouton";
 import { Logo } from "../../composants/logo/logo";
 
 import "./header.css";
@@ -11,12 +13,18 @@ export const Header = () => {
         <Logo />
       </div>
       <div className="lienEtBouton">
-        <div className="barreDeNavigation">
-          <LienHeader texte="Mon Entreprise" href="" />
-          <LienHeader texte="Mes Prestation" href="" />
-          <LienHeader texte="Ajouter une Prestation" href="/AjoutPrestation" />
-        </div>
-        <Bouton className="boutonAction" text="Rejoindre" Click="" />
+        <nav className="barreDeNavigation">
+          <Link className="lienHeader" to="/EspaceEntreprise">
+            <li>Mon entreprise</li>
+          </Link>
+          <Link className="lienHeader" to="/">
+            <li>Mes Prestations</li>
+          </Link>
+          <Link className="lienHeader" to="/AjoutPrestation">
+            <li>Ajouter une prestation</li>
+          </Link>
+        </nav>
+        <Bouton id="boutonCTAHeader" text="Rejoindre" Click="" />
       </div>
     </header>
   );
