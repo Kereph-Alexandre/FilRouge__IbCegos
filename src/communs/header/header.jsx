@@ -1,3 +1,5 @@
+
+import { LienHeader } from "../../composants/lien_header/lienHeader";
 import { Link } from "react-router-dom";
 import { Bouton } from "../../composants/Bouton/Bouton";
 import { Logo } from "../../composants/logo/logo";
@@ -18,7 +20,7 @@ export const Header = () => {
           <Link className="lienHeader" to="/">
             <li>Mes Prestations</li>
           </Link>
-          <Link className="lienHeader" to="/">
+          <Link className="lienHeader" to="/AjoutPrestation">
             <li>Ajouter une prestation</li>
           </Link>
         </nav>
