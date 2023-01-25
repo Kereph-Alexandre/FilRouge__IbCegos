@@ -1,7 +1,3 @@
-
-import { Bouton } from "../../composants/Bouton/Bouton"
-import { SearchbarItem } from "../../composants/SearchbarItem/SearchbarItem"
-
 import "./Searchbar.css";
 import { Icon } from "@iconify/react";
 import { useState } from "react";
