@@ -1,179 +1,90 @@
+.boutonAjoutPrestation {
+  background-color: #f5cb02;
+  border: none;
+  border-radius: 5px;
+  font-family: "Righteous", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  padding: 1em;
+}
 
-.boutonajoutprestation {
-
-    background-color: #f5cb02;
-    border: none;
-    border-radius: 5px 5px 5px 5px;
-    font-family: "Righteous", sans-serif; 
-    font-size: 8px;   
-    height: 4vh;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin: 0 5px 0 500px;
-    margin-right: 50px;
-
+.pageGlobale {
+  margin: 1em 100px;
+  background: rgba(206, 206, 206, 0.25);
+  padding: 1em;
+  border-radius: 10px;
 }
 
 .h2ajoutprestation {
-font-family: "Righteous", sans-serif; 
-width: 706px;
-height: 32px;
-left: -17px;
-top: 196px;
+  font-family: "Righteous", sans-serif;
 
-font-family: 'Righteous';
-font-style: normal;
-font-weight: 400;
-font-size: 32px;
-line-height: 110%;
-/* or 35px */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 110%;
+  /* or 35px */
 
-text-align: center;
-letter-spacing: 0.16em;
-text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
 
-color: #000000;
+  color: #000000;
+  margin: 0;
 }
 
-.nomajoutprestation {
-
-width: 706px;
-height: 32px;
-left: -183px;
-top: 262px;
-
-font-family: 'Righteous';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 110%;
-/* or 18px */
-
-text-align: center;
-letter-spacing: 0.16em;
-text-transform: uppercase;
-
-color: #1237A1;
-    
-}
-
-.localisationajoutprestation {
-
-font-family: "Righteous", sans-serif; 
-width: 706px;
-height: 32px;
-left: 477px;
-top: 261px;
-
-font-family: 'Righteous';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 110%;
-/* or 18px */
-
-text-align: center;
-letter-spacing: 0.16em;
-text-transform: uppercase;
-
-color: #1237A1;
-}
-
-.tauxhoraireajoutprestation {
-
-font-family: "Righteous", sans-serif; 
-width: 332px;
-height: 32px;
-left: 51px;
-top: 377px;
-
-font-family: 'Righteous';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 110%;
-/* or 18px */
-
-text-align: center;
-letter-spacing: 0.16em;
-text-transform: uppercase;
-
-color: #1237A1;
-}
-
-.descriptionajoutprestation {
-
-font-family: "Righteous", sans-serif; 
-width: 706px;
-height: 32px;
-left: 468px;
-top: 377px;
-
-font-family: 'Righteous';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 110%;
-/* or 18px */
-
-text-align: center;
-letter-spacing: 0.16em;
-text-transform: uppercase;
-
-color: #1237A1;
-}
-
+.nomajoutprestation,
+.localisationajoutprestation,
+.tauxhoraireajoutprestation,
+.descriptionajoutprestation,
 .categorieajoutprestation {
+  font-family: "Righteous";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+  /* or 18px */
 
-font-family: "Righteous", sans-serif; 
-width: 332px;
-height: 32px;
-left: 33px;
-top: 491px;
+  text-align: center;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
 
-font-family: 'Righteous';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 110%;
-/* or 18px */
-
-text-align: center;
-letter-spacing: 0.16em;
-text-transform: uppercase;
-
-color: #1237A1;
-
+  color: #1237a1;
 }
 
+.inputAjoutPrestation {
+  width: 100%;
+  min-height: 40px;
+  border: none;
 
-.input1 {
-
-    
-    width: 30%;
-    height: 15%;
-    min-height: 40px;
-    left: 146px;
-    top: 290px;
-    
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
 }
 
-
-.input2 {
-
-    
-    width: 518px;
-    height: 174px;
-    left: 755px;
-    top: 404px;
-    
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    
+.formCreationPrestation label {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
+.informationsEssentielles,
+.informationsSecondaires {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 40%;
+
+  margin: 2em;
+
+  align-items: flex-start;
+}
+
+.inputsFormulaire {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.boutonFormulaire {
+  display: flex;
+  justify-content: flex-end;
+}

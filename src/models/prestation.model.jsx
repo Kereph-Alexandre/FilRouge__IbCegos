@@ -13,7 +13,7 @@ export default class PrestationModel {
   note;
 
   constructor(
-    idEntreprise,
+    idEntreprise = 1,
     img = "http://dummyimage.com/100x100.png/dddddd/000000",
     titre,
     categorie = "Non répertorié",
