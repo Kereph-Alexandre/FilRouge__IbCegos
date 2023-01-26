@@ -6,6 +6,7 @@ import { FormulaireEntreprise } from "../composants/FormulaireEntreprise/Formula
 import { Inscription } from "../pages/Inscription";
 import { Connexion } from "../pages/Connexion";
 import { Recherche } from "../pages/Recherche/Recherche";
+import { Panier } from "../pages/Panier/Panier";
 export const Router = () => {
   const routes = [
     {
@@ -44,6 +45,10 @@ export const Router = () => {
       path: "/AjoutPrestation",
       element: <AjoutPrestation />,
     },
+    {
+      path: "/Panier",
+      element: <Panier />
+    }
   ];
 
   return <>{useRoutes(routes)}</>;
