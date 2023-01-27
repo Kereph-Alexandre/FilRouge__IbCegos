@@ -3,6 +3,8 @@ import PrestationModel from "../../models/prestation.model";
 import PrestationService from "../../services/prestation.services";
 import "../AjoutPrestation/AjoutPrestation.css";
 
+import { useNavigate } from "react-router";
+
 const AjoutPrestation = (props) => {
   const [titre, setTitre] = useState("");
   const [tauxHoraire, setTauxHoraire] = useState("");
@@ -10,7 +12,9 @@ const AjoutPrestation = (props) => {
   const [localisation, setLocalisation] = useState("");
   const [description, setDescription] = useState("");
 
-  const ajouterPrestation = (event) => {
+  const navigation = useNavigate();
+
+  const ajouterPrestation = () => {
     const nouvellePrestation = new PrestationModel(
       titre,
       categorie,
@@ -19,7 +23,9 @@ const AjoutPrestation = (props) => {
       description
     );
 
-    PrestationService.creationPrestation(nouvellePrestation);
+    PrestationService.creationPrestation(nouvellePrestation).then(
+      (prestation) => navigation(`/fichePrestation/${prestation.id}`)
+    );
   };
 
   const soumissionDonnees = (evenement) => {
@@ -28,6 +34,7 @@ const AjoutPrestation = (props) => {
 
     //Redirect vers la prestation
   };
+
   return (
     <section className="pageGlobale">
       <form className="formCreationPrestation" onSubmit={soumissionDonnees}>
