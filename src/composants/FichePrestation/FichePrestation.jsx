@@ -15,7 +15,7 @@ export const FichePrestation = () => {
         setFocusPrestation(prestation)
       );
     }
-  });
+  }, []);
 
   return (
     <main className="fichePrestation">
