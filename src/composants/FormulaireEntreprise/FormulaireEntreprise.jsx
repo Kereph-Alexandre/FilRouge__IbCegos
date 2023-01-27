@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./FormulaireEntreprise.css";
 
 export const FormulaireEntreprise = () => {
-  const Entreprise = {
+  let Entreprise = {
     id: 1,
     nom: "Lapeyre",
     img: "https://dummyimage.com/100x100/000/fff",
@@ -49,6 +49,14 @@ export const FormulaireEntreprise = () => {
                 name="logoEntreprise"
               />
             </label>
+          </div>
+          <div className="resumeEntreprise">
+            <p>Nom : {Entreprise.nom}</p>
+            <p>Présentation : {Entreprise.presentation}</p>
+            <p>Siret : {Entreprise.siret}</p>
+            <p>Effectif : {Entreprise.effectif}</p>
+            <p>Domaine D'activité : {Entreprise.domaineActivite}</p>
+            <p>Zone Géographique : {Entreprise.zoneGeo}</p>
           </div>
         </div>
         <div className="encartDescriptionEntreprise">

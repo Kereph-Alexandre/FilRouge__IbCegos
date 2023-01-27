@@ -58,6 +58,7 @@
 
 .imageEntreprise {
   display: flex;
+  justify-content: space-between;
   background-color: var(--background-grey);
   border-radius: 10px;
   flex-direction: row;
