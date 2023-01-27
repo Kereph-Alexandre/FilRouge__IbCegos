@@ -6,6 +6,7 @@ import { FormulaireEntreprise } from "../composants/FormulaireEntreprise/Formula
 import { Inscription } from "../pages/Inscription";
 import { Connexion } from "../pages/Connexion";
 import { Recherche } from "../pages/Recherche/Recherche";
+
 export const Router = () => {
   const routes = [
     {
