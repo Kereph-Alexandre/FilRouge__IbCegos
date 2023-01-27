@@ -1,3 +1,5 @@
+import { Chip } from "@mui/material";
+import { Bouton } from "../Bouton/Bouton";
 import "./cartePrestation.css";
 
 /**
@@ -12,11 +14,16 @@ export const CartePrestation = (props) => {
 
       <div className="corpsDeCarte">
         <div className="descriptionCarte">
-          <h2>
-            <a href={props.id}>{props.titre}</a>
-          </h2>
+          <div className="enteteCarte">
+            <span className="titreCarte">{props.titre}</span>
+            <span className="cartePrixPrestation">{props.tauxHoraire}/h</span>
+          </div>
+          <p className="texteDeCarte">{props.description}</p>
         </div>
-        <a href={props.id}>Voir Plus</a>
+        <div className="carteInformationsSupplementaires">
+          <Chip label={props.categorie || "catégorie manquante"} />
+          <Bouton text="Voir Plus" />
+        </div>
       </div>
     </div>
   );
