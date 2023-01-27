@@ -149,3 +149,11 @@
   display: flex;
   justify-content: end;
 }
+
+.imageEntreprise input[type="file"] {
+  display: none;
+}
+
+.choixImage label {
+  cursor: pointer;
+}
