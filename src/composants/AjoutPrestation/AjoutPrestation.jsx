@@ -10,20 +10,27 @@ const AjoutPrestation = (props) => {
   const [localisation, setLocalisation] = useState("");
   const [description, setDescription] = useState("");
 
-  const ajouterPrestation = () => {
+  const ajouterPrestation = (event) => {
     const nouvellePrestation = new PrestationModel(
       titre,
-      tauxHoraire,
       categorie,
+      tauxHoraire,
       localisation,
       description
     );
 
     PrestationService.creationPrestation(nouvellePrestation);
   };
+
+  const soumissionDonnees = (evenement) => {
+    evenement.preventDefault();
+    ajouterPrestation();
+
+    //Redirect vers la prestation
+  };
   return (
     <section className="pageGlobale">
-      <form className="formCreationPrestation" onSubmit={ajouterPrestation}>
+      <form className="formCreationPrestation" onSubmit={soumissionDonnees}>
         <h2 className="h2ajoutprestation">NOUVELLE PRESTATION</h2>
         <div className="inputsFormulaire">
           <div className="informationsEssentielles">
@@ -34,6 +41,7 @@ const AjoutPrestation = (props) => {
               className="inputAjoutPrestation"
               type="text"
               name="titre"
+              required
               onChange={(evenement) => setTitre(evenement.target.value)}
             />
             <label for="categorie" className="categorieajoutprestation">
@@ -43,6 +51,7 @@ const AjoutPrestation = (props) => {
               className="inputAjoutPrestation"
               type="text"
               name="categorie"
+              required
               onChange={(evenement) => setCategorie(evenement.target.value)}
             />
 
@@ -53,6 +62,7 @@ const AjoutPrestation = (props) => {
               className="inputAjoutPrestation"
               type="text"
               name="tauxHoraire"
+              required
               onChange={(evenement) => setTauxHoraire(evenement.target.value)}
             />
           </div>
@@ -64,6 +74,7 @@ const AjoutPrestation = (props) => {
               className="inputAjoutPrestation"
               type="text"
               name="localisation"
+              required
               onChange={(evenement) => setLocalisation(evenement.target.value)}
             />
 
@@ -76,6 +87,7 @@ const AjoutPrestation = (props) => {
               id=""
               cols="30"
               rows="10"
+              required
               onChange={(evenement) =>
                 setDescription(evenement.target.value)
               }></textarea>
