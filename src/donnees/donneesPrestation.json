@@ -1399,6 +1399,17 @@
       "datePublication": "12/06/2022",
       "categorie": "Finance",
       "nombrePrestations": 28
+    },
+    {
+      "idEntreprise": "je teste",
+      "img": "200",
+      "titre": "un truc",
+      "categorie": "vitefé",
+      "description": "c'est sur ca va planter",
+      "datePublication": "27/01/2023",
+      "nombrePrestations": 0,
+      "note": 0,
+      "id": 101
     }
   ]
 }
