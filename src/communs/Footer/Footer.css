@@ -1,13 +1,13 @@
 .footer {
   display: flex;
   justify-content: space-around;
-  flex-grow: 1;
-  height: 14vh;
   background-color: #1237a1;
-  position: static;
-  bottom: 0;
-  width: 100%;
-  text-transform : uppercase;
+  text-transform: uppercase;
+  /* height: 14vh; semlble causer des soucis lorsque la hauteur d'écran est reduite */
+  /* position: static; semble inutile 
+  width: 100%; */
+  /* bottom: 0;     déclaré sans-incidence par l'inspecteur
+  flex-grow: 1; */
 }
 
 .containerFooter {
