@@ -9,8 +9,8 @@ export const FormulaireEntreprise = () => {
   const [entreprise, setEntreprise] = useState({
     img: "http://dummyimage.com/165x250.png/5fa2dd/ffffff",
     presentation: "",
-    siret: 0,
-    effectif: 0,
+    siret: "",
+    effectif: "",
     domaine: "",
     zoneGeo: "",
   });

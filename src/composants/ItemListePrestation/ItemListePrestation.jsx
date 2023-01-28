@@ -1,9 +1,7 @@
+import { Chip, Rating } from "@mui/material";
 import "./ItemListePrestation.css";
 
 export const ItemListePrestation = (props) => {
-  const tropLong = props.description.length > 230;
-  const description = props.description.slice(0, 229);
-
   return (
     <section className="itemListePrestation">
       <img
@@ -13,15 +11,23 @@ export const ItemListePrestation = (props) => {
       />
       <div className="informationListePrestation">
         <div className="enteteItemListe">
-          <span className="titreListePrestation">
-            {props.titre} - {props.categorie} -{props.localisation}
-          </span>
-          <span className="noteListePrestation">{props.note}/5</span>
+          <span className="titreListePrestation">{props.titre}</span>
+          <Rating
+            className="noteListePrestation"
+            value={props.note}
+            readOnly></Rating>
         </div>
-        <p className="descriptionListePrestation">
-          {description}
-          {tropLong ? <span>...</span> : <></>}
-        </p>
+        <div className="secondeLigneEntete">
+          <span className="localisationListePrestation">
+            {props.localisation}
+          </span>
+          <span>
+            <Chip
+              className="chipListePrestation"
+              label={props.categorie}></Chip>
+          </span>
+        </div>
+        <p className="descriptionListePrestation">{props.description}</p>
       </div>
     </section>
   );
