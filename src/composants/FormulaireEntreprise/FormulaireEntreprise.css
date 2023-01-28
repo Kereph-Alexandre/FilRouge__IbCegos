@@ -56,9 +56,18 @@
   margin: 2em;
 }
 
+#descriptionEntreprise,
+.choixImage input {
+  font-size: var(--textfont-size);
+  font-family: var(--textfont-family);
+  font-weight: var(--textfont-weight);
+  text-transform: uppercase;
+  line-height: var(--textfont-lineheight);
+  letter-spacing: var(--textfont-letterspacing);
+}
+
 .imageEntreprise {
   display: flex;
-  justify-content: space-between;
   background-color: var(--background-grey);
   border-radius: 10px;
   flex-direction: row;
@@ -66,11 +75,25 @@
 
 .choixImage {
   padding-left: 2em;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+.choixImage input {
+  margin: 1em 0;
+  width: 50%;
+}
+
+.imageLabelInput {
+  display: flex;
+  flex-direction: column;
 }
 
 .imageEntreprise img {
   border-radius: 10px;
-  width: 190px;
+  width: 20%;
 }
 
 .encartDescriptionEntreprise {
@@ -112,7 +135,8 @@
   align-items: center;
 }
 
-.informationsEntreprise input {
+.informationsEntreprise input,
+.choixImage input {
   width: 60vw;
   height: 50px;
   border: none;
@@ -127,7 +151,7 @@
   padding-left: 7px;
 }
 
-.espaceEntreprise button {
+.boutonConfirmer button {
   box-sizing: border-box;
   height: 50px;
   width: 230px !important;
@@ -146,15 +170,19 @@
   text-transform: uppercase !important;
 }
 
-.alacon {
+.boutonConfirmer button:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.boutonConfirmer button:active {
+  box-shadow: none;
+  background-color: #c0a001 !important;
+}
+
+.boutonConfirmer {
   display: flex;
   justify-content: end;
 }
 
 .imageEntreprise input[type="file"] {
   display: none;
-}
-
-.choixImage label {
-  cursor: pointer;
 }
