@@ -77,6 +77,7 @@ export const FormulaireEntreprise = () => {
             name="descriptionEntreprise"
             id="descriptionEntreprise"
             value={entreprise.presentation}
+            placeholder="Mettez en avant votre entreprise ici"
             onChange={(event) =>
               setEntreprise({ ...entreprise, presentation: event.target.value })
             }
