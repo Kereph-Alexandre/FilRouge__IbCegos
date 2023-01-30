@@ -5,7 +5,7 @@ import Banner from "../composants/Banniere/Banniere";
 export const Accueil = () => {
   return (
     <>
-      <Searchbar />
+      <Searchbar placeholder="Que cherchez-vous ?"/>
       <Banner />
       <AffichageCartePrestation />
     </>

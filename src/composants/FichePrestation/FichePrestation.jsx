@@ -4,18 +4,22 @@ import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import PrestationService from "../../services/prestation.services";
 import { useState } from "react";
+import Rating from '@mui/material/Rating';
 
 export const FichePrestation = () => {
   const { id } = useParams();
   const [focusPrestation, setFocusPrestation] = useState({});
 
+  const [valeur, setValeur] = useState(0);
+
   useEffect(() => {
     if (id) {
       PrestationService.getPrestation(id).then((prestation) =>
-        setFocusPrestation(prestation)
+        {setFocusPrestation(prestation);
+        setValeur(prestation.note)}
       );
     }
-  });
+  }, [id]);
 
   return (
     <main className="fichePrestation">
@@ -36,7 +40,7 @@ export const FichePrestation = () => {
           </div>
           <div className="sectionInformation">
             <span className="labelInformationPrincipale">Note Moyenne</span>
-            <span className="information">{focusPrestation.note}/5</span>
+            <span className="information"><Rating name="read-only" value={valeur} readOnly  /></span>
             {/* Note */}
           </div>
 

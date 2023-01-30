@@ -21,9 +21,10 @@
 
 .fichePrestation {
   width: 80%;
-  height: 100vh;
 
   padding: 2em;
+
+  margin: auto;
 }
 
 .presentationPrestation {
@@ -108,7 +109,8 @@
   overflow-y: auto;
 }
 .descriptionPrestation p,
-.secondairePrestation p {
+.secondairePrestation p,
+.information {
   font-family: var(--textfont-family);
   font-size: var(--textfont-size);
   font-weight: var(--textfont-weight);
@@ -125,4 +127,9 @@
   line-height: var(--titlefont-lineheight);
   letter-spacing: var(--titlefont-letterspacing);
   text-transform: var(--titlefont-transform);
+}
+
+.information {
+  margin-top: auto;
+  margin-bottom: auto;
 }

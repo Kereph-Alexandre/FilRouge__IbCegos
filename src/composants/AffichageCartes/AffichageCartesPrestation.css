@@ -6,3 +6,8 @@
 
   margin: 4.16vw;
 }
+
+.affichagePrestations a {
+  text-decoration: none;
+  color: #1237a1;
+}

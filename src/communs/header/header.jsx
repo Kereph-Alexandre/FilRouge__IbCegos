@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import { Bouton } from "../../composants/Bouton/Bouton";
 import { Logo } from "../../composants/logo/logo";
+import { Icon } from "@iconify/react";
 
 import "./header.css";
 
-export const Header = () => {
+export const Header = (props) => {
   return (
     <header className="header">
       <div className="logoHeader">
@@ -22,7 +23,12 @@ export const Header = () => {
             <li>Ajouter une prestation</li>
           </Link>
         </nav>
-        <Bouton id="boutonCTAHeader" text="Rejoindre" Click="" />
+        <div className="iconsHeader">
+        <a href="http://"><Icon icon="ph:shopping-cart-simple-fill" color="#f5cb02" width="30" /></a>
+        <Icon icon="ph:bell-fill" color="#f5cb02" width="30" />
+        <a href="http://"><Icon icon="ph:user-fill" color="#f5cb02" width="30" /></a>
+        </div>
+          {/* <Bouton id="boutonCTAHeader" text="Rejoindre" Click="" /> */}
       </div>
     </header>
   );

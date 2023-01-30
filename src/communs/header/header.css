@@ -78,3 +78,12 @@
 .lienHeader:hover {
   color: #f5cb02;
 }
+
+.iconsHeader {
+  display: flex;
+  flex-direction: row;
+}
+
+.iconsHeader a {
+  padding: 0 10px 0 10px;
+}

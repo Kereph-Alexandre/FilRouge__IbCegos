@@ -49,8 +49,16 @@
   font-weight: 400;
 }
 
-.corpsDeCarte h2 {
+.titreCarte,
+.cartePrixPrestation {
   text-transform: uppercase;
+
+  margin-top: 0.5em;
+
+  -webkit-line-clamp: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .corpsDeCarte h2 a {
   text-decoration: none;
@@ -67,8 +75,23 @@
 
 .corpsDeCarte p {
   font-family: "Lato", sans-serif;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .cartePrestation:hover {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
   transform: scale(1.05);
+}
+
+.enteteCarte,
+.carteInformationsSupplementaires {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carteInformationsSupplementaires button {
+  background: #f5cb02;
 }
