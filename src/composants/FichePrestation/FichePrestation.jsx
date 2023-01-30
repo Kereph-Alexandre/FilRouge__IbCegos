@@ -33,7 +33,7 @@ export const FichePrestation = () => {
 
           <div className="sectionInformation">
             <span className="labelInformationPrincipale">Prestataire :</span>
-            <span className="information">{focusPrestation.prestataire},</span>
+            <span className="information">{focusPrestation.prestataire}</span>
           </div>
           <div className="sectionInformation">
             {focusPrestation.nombrePrestations} prestations jusqu'à présent

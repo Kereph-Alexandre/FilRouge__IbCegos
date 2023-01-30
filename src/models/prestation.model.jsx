@@ -31,7 +31,7 @@ export default class PrestationModel {
 
     // this prestataire = fonction recherche selon idEntreprise,
     // retour entreprise => entreprise.nom
-    this.prestataire = "nom du Prestataire";
+    this.prestataire = "Atelier du Bricoleur";
 
     // ID géré par JSON server ?
 
