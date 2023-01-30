@@ -273,15 +273,23 @@
       "img": "https://www.legalplace.fr/wp-content/uploads/2016/09/Contrat-de-travail-femme-de-m%C3%A9nage-e1491838515556.jpg",
       "description": "Je peux être chargé d'étendre et de maintenir une communauté d'internautes autour d'intérêts ou de thèmes communs, via des plates formes communautaires comme les réseaux sociaux, les blogues ... ",
       "note": 1,
-
       "prestataire": "Mr.Denis",
       "tauxHoraire": "€13,87",
       "localisation": "Aibes",
       "datePublication": "21/12/2022",
       "categorie": "Services",
       "nombrePrestations": 733
-}
-     
-    
+    }
+  ],
+  "Entreprise": [
+    {
+      "id": 1,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc0hmDKyKThTDu53f7Xqr8pe_0QjnCvIr1bQ&usqp=CAU",
+      "presentation": "L'Atelier du bricoleur est une entreprise qui vous accompagne dans la réalisation de vos projets de bricolage en tous genres. Qu'il s'agissent du montage de meubles ou de travaux de gros œuvre, nos collaborateurs sauront répondre à vos besoins et à vos exigences.",
+      "siret": 12345678901234,
+      "effectif": 3,
+      "domaineActivite": "Bricolage en tout genre",
+      "zoneGeo": "Paris"
+    }
   ]
 }

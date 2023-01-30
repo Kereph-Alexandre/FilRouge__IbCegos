@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import PrestationService from "../../services/prestation.services";
 import { useState } from "react";
-import Rating from '@mui/material/Rating';
+import Rating from "@mui/material/Rating";
 
 export const FichePrestation = () => {
   const { id } = useParams();
@@ -14,10 +14,10 @@ export const FichePrestation = () => {
 
   useEffect(() => {
     if (id) {
-      PrestationService.getPrestation(id).then((prestation) =>
-        {setFocusPrestation(prestation);
-        setValeur(prestation.note)}
-      );
+      PrestationService.getPrestation(id).then((prestation) => {
+        setFocusPrestation(prestation);
+        setValeur(prestation.note);
+      });
     }
   }, [id]);
 
@@ -33,14 +33,16 @@ export const FichePrestation = () => {
 
           <div className="sectionInformation">
             <span className="labelInformationPrincipale">Prestataire :</span>
-            <span className="information">{focusPrestation.prestataire},</span>
+            <span className="information">{focusPrestation.prestataire}</span>
           </div>
           <div className="sectionInformation">
             {focusPrestation.nombrePrestations} prestations jusqu'à présent
           </div>
           <div className="sectionInformation">
             <span className="labelInformationPrincipale">Note Moyenne</span>
-            <span className="information"><Rating name="read-only" value={valeur} readOnly  /></span>
+            <span className="information">
+              <Rating name="read-only" value={valeur} readOnly />
+            </span>
             {/* Note */}
           </div>
 
@@ -68,10 +70,10 @@ export const FichePrestation = () => {
         <h2>Description de la Prestation</h2>
         <p>{focusPrestation.description}</p>
       </article>
-      <article className="secondairePrestation">
+      {/* <article className="secondairePrestation">
         <h2>Informations secondaires</h2>
         <p>...</p>
-      </article>
+      </article> */}
     </main>
   );
 };
