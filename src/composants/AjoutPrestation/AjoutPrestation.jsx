@@ -71,7 +71,7 @@ const AjoutPrestation = (props) => {
             </label>
             <input
               className="inputAjoutPrestation"
-              type="text"
+              type="number"
               name="tauxHoraire"
               placeholder="indiquez le taux horaire"
               required
