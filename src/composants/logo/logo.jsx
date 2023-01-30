@@ -1,16 +1,21 @@
 import { Link } from "react-router-dom";
 import "./logo.css";
+import logo from "./LogoUMC.png";
+
 
 export const Logo = () => {
   return (
     <>
-      <Link to="/">
+
+      <a href="/">
+
         <img
           className="logo"
-          src="https://dummyimage.com/100x100/000/fff"
+          src={logo}  
           alt="logo de l'entreprise UMC"
         />
-      </Link>
+        </a>
+      
     </>
   );
 };
