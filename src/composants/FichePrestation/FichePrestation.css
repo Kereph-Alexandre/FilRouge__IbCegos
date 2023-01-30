@@ -132,4 +132,5 @@
 .information {
   margin-top: auto;
   margin-bottom: auto;
+  flex-basis: 0;
 }

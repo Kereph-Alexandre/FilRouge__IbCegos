@@ -17,7 +17,7 @@ export const AffichageCartePrestation = () => {
   return (
     <div className="affichagePrestations">
       {listePrestations.map((prestation) => (
-        <Link to={`/FichePrestation/${prestation.id}`}>
+        <Link key={prestation.id} to={`/FichePrestation/${prestation.id}`}>
           <CartePrestation key={prestation.id} {...prestation} />
         </Link>
       ))}
