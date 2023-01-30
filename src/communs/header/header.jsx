@@ -16,22 +16,16 @@ export const Header = (props) => {
           <Link className="lienHeader" to="/EspaceEntreprise">
             <li>Mon entreprise</li>
           </Link>
-          <Link className="lienHeader" to="/">
+          {/* <Link className="lienHeader" to="/">
             <li>Mes Prestations</li>
-          </Link>
+          </Link> */}
           <Link className="lienHeader" to="/AjoutPrestation">
             <li>Ajouter une prestation</li>
           </Link>
         </nav>
         <div className="iconsHeader">
-          <a href="http://">
-            <Icon
-              icon="ph:shopping-cart-simple-fill"
-              color="#f5cb02"
-              width="30"
-            />
-          </a>
-          <Icon icon="ph:bell-fill" color="#f5cb02" width="30" />
+          {/* <a href="http://"><Icon icon="ph:shopping-cart-simple-fill" color="#f5cb02" width="30" /></a>
+        <Icon icon="ph:bell-fill" color="#f5cb02" width="30" /> */}
           <a href="http://">
             <Icon icon="ph:user-fill" color="#f5cb02" width="30" />
           </a>
