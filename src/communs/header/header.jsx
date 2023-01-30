@@ -26,7 +26,7 @@ export const Header = (props) => {
         <div className="iconsHeader">
           {/* <a href="http://"><Icon icon="ph:shopping-cart-simple-fill" color="#f5cb02" width="30" /></a>
         <Icon icon="ph:bell-fill" color="#f5cb02" width="30" /> */}
-          <a href="http://">
+          <a href="/">
             <Icon icon="ph:user-fill" color="#f5cb02" width="30" />
           </a>
         </div>
