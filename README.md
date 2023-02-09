@@ -1,3 +1,36 @@
+# UltraMotionCorp (Projet Fil Rouge)
+
+Ce projet fil rouge avait pour but de travailler au développement d'une application permettant la proposiution et vente de services par des prestataires à des clients au travers de 6 modules : 
+- Inscription
+- Recherche de prestation
+- Communication
+- Devis
+- Evaluation
+- Monitoring
+
+Cette version du projet n'avait pas pour but de finaliser l'application mais de mettre en pratique les compétences acquises en formation : 
+- L'organisation dans un cadre agile
+- L'utilisation de Librairies adaptées
+
+# Technologies utilisées
+
+- React JS
+- JSON-server
+- CSS
+
+# Lancement de l'application
+
+Après avoir installé les dépendances 
+> npm i
+
+Lancez JSON-server avec le script
+> npm run json-server
+
+Lancez l'application 
+> npm start
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
